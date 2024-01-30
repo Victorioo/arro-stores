@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,16 +22,81 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.rola-store {
+  background: radial-gradient(circle, #0000002a 50%, #00000058), url('/rola-store.jpeg');
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  width: 100%;
+}
+
+.vitto-store {
+  background: url('/vitto-store.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 1s;
+
+  width: 100%;
+}
+
+
+.vitto-store:hover {
+  background: radial-gradient(circle, #0000008a 50%, #00000058), url('/vitto-store.jpg');
+  transform: scale(1.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rola-store:hover {
+  background: radial-gradient(circle, #0000005f 50%, #00000058), url('/rola-store.jpeg');
+  transform: scale(1.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vitto-store:hover::after {
+  content: 'Web';
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.rola-store:hover::after {
+  content: 'Web';
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.levitate {
+  animation: levitate 5s ease-in-out infinite;
+  border: 6px #2beba3 solid;
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
