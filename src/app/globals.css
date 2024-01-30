@@ -34,7 +34,7 @@ body {
 }
 
 .rola-store {
-  background: radial-gradient(circle, #0000002a 50%, #00000058), url('/rola-store.jpeg');
+  background: radial-gradient(circle, #0000002a 50%, #00000058), url('/rolastore.jpeg');
   background-size: cover;
   background-position: center;
   transition: all 1s;
@@ -42,7 +42,7 @@ body {
 }
 
 .vitto-store {
-  background: url('/vitto-store.jpg');
+  background: url('/vittostore.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ body {
 
 
 .vitto-store:hover {
-  background: radial-gradient(circle, #0000008a 50%, #00000058), url('/vitto-store.jpg');
+  background: radial-gradient(circle, #0000008a 50%, #00000058), url('/vittostore.jpg');
   transform: scale(1.1);
   background-size: cover;
   background-position: center;
@@ -61,7 +61,7 @@ body {
 }
 
 .rola-store:hover {
-  background: radial-gradient(circle, #0000005f 50%, #00000058), url('/rola-store.jpeg');
+  background: radial-gradient(circle, #0000005f 50%, #00000058), url('/rolastore.jpeg');
   transform: scale(1.1);
   background-size: cover;
   background-position: center;
